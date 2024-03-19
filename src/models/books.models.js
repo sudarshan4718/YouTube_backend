@@ -10,7 +10,7 @@ const bookSchema = new mongoose.Schema({
         required: true, 
         unique: true 
     },
-    category: { 
+    subject: { 
         type: String, 
         required: true
      },
@@ -22,14 +22,16 @@ const bookSchema = new mongoose.Schema({
          type: Number,
           required: true 
         },
+    authorname: {
+        type: String,
+    },
+    publisherName: {
+        type: String,
+    },
     borrowedBy: [
         { type: Schema.Types.ObjectId, 
         ref: "User" }
     ],
-    priceHistory: { type: Array,
-         required: true, 
-         default: [] 
-        },
     quantityHistory: { type: Array, 
         required: true, 
         default: [] 
