@@ -22,7 +22,7 @@ const bookSchema = new mongoose.Schema({
          type: Number,
           required: true 
         },
-    authorname: {
+    authorName: {
         type: String,
     },
     publisherName: {
