@@ -1,1 +1,1 @@
-export const DB_NAME = "Library-Management-System"
+export const DB_NAME = "VideoTube"
